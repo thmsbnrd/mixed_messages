@@ -21,10 +21,31 @@ const randomPick = (arr) => {
   return arr[randomIndex];
 };
 
-const randCountry = randomPick(travelAdventure.countries);
-const randActivity = randomPick(travelAdventure.activities);
-const randCompanion = randomPick(travelAdventure.companions);
+const craftMessage = (objArr) => {
+  let country;
+  let activity;
+  let companion;
 
-console.log(randCountry);
-console.log(randActivity);
-console.log(randCompanion);
+  let keys = Object.keys(objArr);
+
+  for (let key of keys) {
+    switch (key) {
+      case "countries":
+        country = randomPick(objArr[key]);
+        break;
+      case "activities":
+        activity = randomPick(objArr[key]);
+        break;
+      case "companions":
+        companion = randomPick(objArr[key]);
+        break;
+      default:
+        console.log("Not a category");
+    }
+  }
+  console.log(country);
+  console.log(activity);
+  console.log(companion);
+};
+
+craftMessage(travelAdventure);
