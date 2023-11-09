@@ -43,9 +43,10 @@ const craftMessage = (objArr) => {
         console.log("Not a category");
     }
   }
-  console.log(country);
-  console.log(activity);
-  console.log(companion);
+
+  let message = `Join ${companion} for an unforgettable adventure in ${country} to ${activity}.`;
+
+  return message;
 };
 
-craftMessage(travelAdventure);
+console.log(craftMessage(travelAdventure));
