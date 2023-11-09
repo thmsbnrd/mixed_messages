@@ -16,4 +16,11 @@ const travelAdventure = {
   ],
 };
 
-console.log("test print to console");
+const randomPick = (arr) => {
+  const randomIndex = Math.floor(Math.random() * arr.length);
+  return arr[randomIndex];
+};
+
+randomPick(travelAdventure.activities);
+
+//console.log("test print to console");
