@@ -21,6 +21,10 @@ const randomPick = (arr) => {
   return arr[randomIndex];
 };
 
-randomPick(travelAdventure.activities);
+const randCountry = randomPick(travelAdventure.countries);
+const randActivity = randomPick(travelAdventure.activities);
+const randCompanion = randomPick(travelAdventure.companions);
 
-//console.log("test print to console");
+console.log(randCountry);
+console.log(randActivity);
+console.log(randCompanion);
