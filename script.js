@@ -7,6 +7,13 @@ const travelAdventure = {
     "take a scenic hike",
     "enjoy a local cooking class",
   ],
+  companions: [
+    "a friend",
+    "a coworker",
+    "your sibling",
+    "your parent",
+    "your significant other",
+  ],
 };
 
 console.log("test print to console");
